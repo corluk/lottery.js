@@ -7,10 +7,12 @@
     "gulp-concat": "^2.6.1",
     "gulp-minify-css": "^1.2.4",
     "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "parcel": "^1.12.4"
   },
   "scripts": {
-    "build": "./node_modules/.bin/gulp"
+    "build": "./node_modules/.bin/gulp",
+    "serve": "node_modules/.bin/parcel index2.html"
   },
   "name": "lottery.js",
   "version": "1.2.2",
@@ -19,5 +21,8 @@
   "repository": "git@github.com:meetmore/lottery.js.git",
   "author": "NekoTora <i@flag.moe> Sun Liang <unstop01@gmail.com>",
   "license": "Apache License 2.0",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "http-server": "^0.12.0"
+  }
 }
